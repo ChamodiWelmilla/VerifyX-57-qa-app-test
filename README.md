@@ -2,6 +2,13 @@
 
 This repository contains the automated test suite for the QA Training App using **Cucumber, Selenium, and Rest-Assured**.
 
+## Prerequisites
+
+- **Java JDK 11+**
+- **Maven**
+- **IDE** like IntelliJ IDEA or VS Code
+- **Browser** for UI tests
+
 ## Repository
 1. Clone the repository:
 
