@@ -3,13 +3,11 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="runners.TestRunner">
+      <class name="api.plants.PlantApiTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="createPlant_underNewChildCategory"/>
         </methods>
-      </class> <!-- runners.TestRunner -->
+      </class> <!-- api.plants.PlantApiTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

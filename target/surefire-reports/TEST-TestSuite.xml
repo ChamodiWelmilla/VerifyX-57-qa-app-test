@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19.958" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\acer\.cache\selenium\chromedriver\win64\144.0.7559.109\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\target\test-classes;C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\target\classes;C:\Users\acer\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\acer\.m2\repository\org\slf4j\slf4j-api\2.0.10\slf4j-api-2.0.10.jar;C:\Users\acer\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\acer\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\acer\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\acer\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-java\4.18.1\selenium-java-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.1\selenium-api-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.18.1\selenium-chrome-driver-4.18.1.jar;C:\Users\acer\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.18.1\selenium-chromium-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.1\selenium-json-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.1\selenium-manager-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.18.1\selenium-devtools-v120-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.18.1\selenium-devtools-v121-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.18.1\selenium-devtools-v122-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.18.1\selenium-devtools-v85-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.18.1\selenium-edge-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.18.1\selenium-firefox-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.1\selenium-http-4.18.1.jar;C:\Users\acer\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.18.1\selenium-ie-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.1\selenium-remote-driver-4.18.1.jar;C:\Users\acer\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\acer\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\acer\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\acer\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\acer\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\acer\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\acer\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\acer\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\acer\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.1\selenium-os-4.18.1.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.18.1\selenium-safari-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.1\selenium-support-4.18.1.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\acer\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\acer\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\acer\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\acer\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\acer\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\acer\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\acer\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\acer\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\acer\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\acer\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\acer\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\acer\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\acer\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\acer\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\acer\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\acer\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\acer\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\acer\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\acer\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\acer\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\acer\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\acer\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\acer\AppData\Local\Temp\surefire3270623238627587064\surefirebooter-20260204004153286_3.jar C:\Users\acer\AppData\Local\Temp\surefire3270623238627587064 2026-02-04T00-41-53_106-jvmRun1 surefire-20260204004153286_1tmp surefire_0-20260204004153286_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\target\test-classes;C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\target\classes;C:\Users\acer\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\acer\.m2\repository\org\slf4j\slf4j-api\2.0.10\slf4j-api-2.0.10.jar;C:\Users\acer\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\acer\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\acer\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\acer\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-java\4.18.1\selenium-java-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.1\selenium-api-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.18.1\selenium-chrome-driver-4.18.1.jar;C:\Users\acer\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.18.1\selenium-chromium-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.1\selenium-json-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.1\selenium-manager-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.18.1\selenium-devtools-v120-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.18.1\selenium-devtools-v121-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.18.1\selenium-devtools-v122-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.18.1\selenium-devtools-v85-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.18.1\selenium-edge-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.18.1\selenium-firefox-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.1\selenium-http-4.18.1.jar;C:\Users\acer\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.18.1\selenium-ie-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.1\selenium-remote-driver-4.18.1.jar;C:\Users\acer\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\acer\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\acer\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\acer\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\acer\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\acer\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\acer\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\acer\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\acer\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.1\selenium-os-4.18.1.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.18.1\selenium-safari-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.1\selenium-support-4.18.1.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\acer\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\acer\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\acer\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\acer\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\acer\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\acer\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\acer\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\acer\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\acer\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\acer\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\acer\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\acer\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\acer\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\acer\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\acer\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\acer\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\acer\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\acer\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\acer\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\acer\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\acer\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\acer\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\acer\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\acer\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\acer\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\acer"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\acer\AppData\Local\Temp\surefire3270623238627587064\surefirebooter-20260204004153286_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS"/>
+    <property name="user.name" value="acer"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.1+12"/>
+    <property name="localRepository" value="C:\Users\acer\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\acer\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\acer\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\acer\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\JetBrains\CLion 2022.1.3\bin\mingw\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Maven\apache-maven-3.9.5\bin;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Users\acer\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\Program Files\sonar-scanner-8.0.1.6346-windows-x64\bin;C:\Users\acer\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\acer\AppData\Local\Programs\Python\Python311\;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Users\acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\Yarn\bin;C:\Platform-tools\platform-tools;C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.2.2\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.4\bin;;C:\Users\acer\platform-tools;C:\Program Files\Azure Data Studio\bin;C:\Program Files\JetBrains\PyCharm 2023.3.3\bin;;C:\Users\acer\AppData\Roaming\npm;C:\Users\acer\.dotnet\tools;C:\Users\acer\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\programs\flutter_windows_3.10.0-stable\flutter\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;c:\Users\acer\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="createChildCategory_withParentName" classname="api.categories.CategoryApiTest" time="3.268">
+    <system-out><![CDATA[00:41:56.533 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:41:56.552 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:41:56.578 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:41:56.579 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:41:56.580 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+00:41:56.580 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:41:56.580 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:41:56.580 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/auth/login HTTP/1.1
+00:41:56.580 [main] DEBUG org.apache.http.wire --  >> "POST /api/auth/login HTTP/1.1[\r][\n]"
+00:41:56.582 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:56.582 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:41:56.583 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 42[\r][\n]"
+00:41:56.583 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:41:56.583 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:41:56.583 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:41:56.584 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:56.584 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:41:56.584 [main] DEBUG org.apache.http.headers -- >> POST /api/auth/login HTTP/1.1
+00:41:56.584 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:56.584 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:41:56.584 [main] DEBUG org.apache.http.headers -- >> Content-Length: 42
+00:41:56.584 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:41:56.584 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:41:56.584 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:41:56.584 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:41:56.584 [main] DEBUG org.apache.http.wire --  >> "{"username":"admin","password":"admin123"}"
+00:41:56.649 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 200 [\r][\n]"
+00:41:56.650 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=19F555888FEB7B8588AAFBD21F957A83; Path=/; HttpOnly[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "Content-Length: 194[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:11:56 GMT[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:41:56.651 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:41:56.652 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 
+00:41:56.652 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 200 
+00:41:56.652 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=19F555888FEB7B8588AAFBD21F957A83; Path=/; HttpOnly
+00:41:56.652 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:41:56.652 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:41:56.652 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:41:56.652 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:41:56.652 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:41:56.653 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:41:56.653 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:41:56.653 [main] DEBUG org.apache.http.headers -- << Content-Length: 194
+00:41:56.653 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:11:56 GMT
+00:41:56.653 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:41:56.653 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:41:56.659 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:56.666 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:41:56.667 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:56.713 [main] DEBUG org.apache.http.wire --  << "{"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE2LCJleHAiOjE3NzAxNDk1MTZ9.o8RXL64J34ri1V2GBuJecEWxXhlzO5Ne0p83by6nitY","tokenType":"Bearer"}"
+00:41:56.715 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@695c938d
+00:41:56.715 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:57.559 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:41:57.559 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:41:57.560 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:41:57.560 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:41:57.560 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:41:57.560 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:41:57.560 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/categories HTTP/1.1
+00:41:57.560 [main] DEBUG org.apache.http.wire --  >> "POST /api/categories HTTP/1.1[\r][\n]"
+00:41:57.560 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE2LCJleHAiOjE3NzAxNDk1MTZ9.o8RXL64J34ri1V2GBuJecEWxXhlzO5Ne0p83by6nitY[\r][\n]"
+00:41:57.560 [main] DEBUG org.apache.http.wire --  >> "Cookie: JSESSIONID=19F555888FEB7B8588AAFBD21F957A83[\r][\n]"
+00:41:57.560 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:57.560 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:41:57.560 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 20[\r][\n]"
+00:41:57.561 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:41:57.561 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:41:57.561 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:41:57.561 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:57.561 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> POST /api/categories HTTP/1.1
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE2LCJleHAiOjE3NzAxNDk1MTZ9.o8RXL64J34ri1V2GBuJecEWxXhlzO5Ne0p83by6nitY
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> Cookie: JSESSIONID=19F555888FEB7B8588AAFBD21F957A83
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> Content-Length: 20
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:41:57.561 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:41:57.561 [main] DEBUG org.apache.http.wire --  >> "{"name":"par63rpq4"}"
+00:41:57.577 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 [\r][\n]"
+00:41:57.577 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=46D0FD2F0F2C840D6245E1A0F956788A; Path=/; HttpOnly[\r][\n]"
+00:41:57.577 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "Content-Length: 49[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:11:56 GMT[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:41:57.578 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 
+00:41:57.578 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 
+00:41:57.578 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=46D0FD2F0F2C840D6245E1A0F956788A; Path=/; HttpOnly
+00:41:57.578 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:41:57.578 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:41:57.578 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:41:57.578 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:41:57.578 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:41:57.578 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:41:57.578 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:41:57.579 [main] DEBUG org.apache.http.headers -- << Content-Length: 49
+00:41:57.579 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:11:56 GMT
+00:41:57.579 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:41:57.579 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:41:57.579 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:57.579 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:41:57.579 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:57.580 [main] DEBUG org.apache.http.wire --  << "{"id":53,"name":"par63rpq4","subCategories":null}"
+00:41:57.582 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@78d23d6a
+00:41:57.582 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:57.651 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:41:57.651 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:41:57.652 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:41:57.652 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:41:57.654 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:41:57.654 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:41:57.654 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/categories HTTP/1.1
+00:41:57.654 [main] DEBUG org.apache.http.wire --  >> "POST /api/categories HTTP/1.1[\r][\n]"
+00:41:57.654 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE2LCJleHAiOjE3NzAxNDk1MTZ9.o8RXL64J34ri1V2GBuJecEWxXhlzO5Ne0p83by6nitY[\r][\n]"
+00:41:57.654 [main] DEBUG org.apache.http.wire --  >> "Cookie: JSESSIONID=46D0FD2F0F2C840D6245E1A0F956788A[\r][\n]"
+00:41:57.655 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:57.655 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:41:57.655 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 39[\r][\n]"
+00:41:57.655 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:41:57.655 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:41:57.655 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:41:57.655 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:57.655 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> POST /api/categories HTTP/1.1
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE2LCJleHAiOjE3NzAxNDk1MTZ9.o8RXL64J34ri1V2GBuJecEWxXhlzO5Ne0p83by6nitY
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> Cookie: JSESSIONID=46D0FD2F0F2C840D6245E1A0F956788A
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> Content-Length: 39
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:41:57.655 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:41:57.655 [main] DEBUG org.apache.http.wire --  >> "{"name":"chi7lhe5c","parent":{"id":53}}"
+00:41:57.683 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 [\r][\n]"
+00:41:57.683 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=DD00685F9B24E629F4A3FC9877BB1FE1; Path=/; HttpOnly[\r][\n]"
+00:41:57.683 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "Content-Length: 49[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:11:57 GMT[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:41:57.684 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=DD00685F9B24E629F4A3FC9877BB1FE1; Path=/; HttpOnly
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << Content-Length: 49
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:11:57 GMT
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:41:57.684 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:41:57.685 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:57.685 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:41:57.685 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:57.686 [main] DEBUG org.apache.http.wire --  << "{"id":54,"name":"chi7lhe5c","subCategories":null}"
+00:41:57.686 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@38883a31
+00:41:57.686 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+]]></system-out>
+  </testcase>
+  <testcase name="createParentCategory_withNameOnly" classname="api.categories.CategoryApiTest" time="0.203">
+    <system-out><![CDATA[00:41:57.833 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:41:57.833 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:41:57.834 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:41:57.836 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:41:57.836 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+00:41:57.836 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:41:57.836 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:41:57.836 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/auth/login HTTP/1.1
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "POST /api/auth/login HTTP/1.1[\r][\n]"
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 42[\r][\n]"
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:41:57.836 [main] DEBUG org.apache.http.headers -- >> POST /api/auth/login HTTP/1.1
+00:41:57.836 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:57.836 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:41:57.836 [main] DEBUG org.apache.http.headers -- >> Content-Length: 42
+00:41:57.836 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:41:57.836 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:41:57.836 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:41:57.836 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:41:57.836 [main] DEBUG org.apache.http.wire --  >> "{"username":"admin","password":"admin123"}"
+00:41:57.912 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 200 [\r][\n]"
+00:41:57.913 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=9A360CB70AC01D11CE7F6819E308CF44; Path=/; HttpOnly[\r][\n]"
+00:41:57.913 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:41:57.913 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:41:57.913 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:41:57.913 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:41:57.913 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:41:57.913 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:41:57.913 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:41:57.913 [main] DEBUG org.apache.http.wire --  << "Content-Length: 194[\r][\n]"
+00:41:57.915 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:11:57 GMT[\r][\n]"
+00:41:57.915 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:41:57.915 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:41:57.915 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:41:57.915 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 200 
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=9A360CB70AC01D11CE7F6819E308CF44; Path=/; HttpOnly
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << Content-Length: 194
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:11:57 GMT
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:41:57.915 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:41:57.915 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:57.915 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:41:57.916 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:57.917 [main] DEBUG org.apache.http.wire --  << "{"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE3LCJleHAiOjE3NzAxNDk1MTd9.XmVc-OyQGJHqH-0oakC_sU7xlPusoGEEF6DzWGsjFYs","tokenType":"Bearer"}"
+00:41:57.917 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6cc64028
+00:41:57.917 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:57.952 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:41:57.952 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:41:57.953 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:41:57.954 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:41:57.954 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:41:57.954 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:41:57.954 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/categories HTTP/1.1
+00:41:57.954 [main] DEBUG org.apache.http.wire --  >> "POST /api/categories HTTP/1.1[\r][\n]"
+00:41:57.954 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE3LCJleHAiOjE3NzAxNDk1MTd9.XmVc-OyQGJHqH-0oakC_sU7xlPusoGEEF6DzWGsjFYs[\r][\n]"
+00:41:57.956 [main] DEBUG org.apache.http.wire --  >> "Cookie: JSESSIONID=9A360CB70AC01D11CE7F6819E308CF44[\r][\n]"
+00:41:57.956 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:57.956 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:41:57.956 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 20[\r][\n]"
+00:41:57.956 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:41:57.956 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:41:57.956 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:41:57.957 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:57.957 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> POST /api/categories HTTP/1.1
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE3LCJleHAiOjE3NzAxNDk1MTd9.XmVc-OyQGJHqH-0oakC_sU7xlPusoGEEF6DzWGsjFYs
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> Cookie: JSESSIONID=9A360CB70AC01D11CE7F6819E308CF44
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> Content-Length: 20
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:41:57.957 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:41:57.957 [main] DEBUG org.apache.http.wire --  >> "{"name":"pard3t8sk"}"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 [\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=7E37CBB1DF9529B71EBA1F1E4631373D; Path=/; HttpOnly[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "Content-Length: 49[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:11:57 GMT[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:41:57.981 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 
+00:41:57.981 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 
+00:41:57.981 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=7E37CBB1DF9529B71EBA1F1E4631373D; Path=/; HttpOnly
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << Content-Length: 49
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:11:57 GMT
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:41:57.983 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:41:57.983 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:57.983 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:41:57.983 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:57.984 [main] DEBUG org.apache.http.wire --  << "{"id":55,"name":"pard3t8sk","subCategories":null}"
+00:41:57.984 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2fd1ad8a
+00:41:57.984 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+]]></system-out>
+  </testcase>
+  <testcase name="createPlant_underNewChildCategory" classname="api.plants.PlantApiTest" time="0.362">
+    <system-out><![CDATA[00:41:58.029 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:41:58.029 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:41:58.030 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:41:58.030 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:41:58.030 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+00:41:58.030 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:41:58.030 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:41:58.030 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/auth/login HTTP/1.1
+00:41:58.030 [main] DEBUG org.apache.http.wire --  >> "POST /api/auth/login HTTP/1.1[\r][\n]"
+00:41:58.030 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:58.030 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:41:58.030 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 42[\r][\n]"
+00:41:58.030 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:41:58.030 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:41:58.031 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:41:58.031 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:58.031 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:41:58.031 [main] DEBUG org.apache.http.headers -- >> POST /api/auth/login HTTP/1.1
+00:41:58.031 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:58.031 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:41:58.031 [main] DEBUG org.apache.http.headers -- >> Content-Length: 42
+00:41:58.031 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:41:58.031 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:41:58.031 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:41:58.031 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:41:58.031 [main] DEBUG org.apache.http.wire --  >> "{"username":"admin","password":"admin123"}"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 200 [\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=645549427919DB2F037130DEDCDDA6F8; Path=/; HttpOnly[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "Content-Length: 194[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:11:57 GMT[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:41:58.110 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 200 
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=645549427919DB2F037130DEDCDDA6F8; Path=/; HttpOnly
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << Content-Length: 194
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:11:57 GMT
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:41:58.110 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:41:58.110 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:58.111 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:41:58.111 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:58.113 [main] DEBUG org.apache.http.wire --  << "{"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE4LCJleHAiOjE3NzAxNDk1MTh9.WhV37TZEV40AiLRSraaM1l-XJE2no6jBqZ1v28W4UCI","tokenType":"Bearer"}"
+00:41:58.113 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@16bd7ae1
+00:41:58.113 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:58.143 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:41:58.143 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:41:58.144 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:41:58.144 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:41:58.144 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:41:58.145 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:41:58.145 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/categories HTTP/1.1
+00:41:58.145 [main] DEBUG org.apache.http.wire --  >> "POST /api/categories HTTP/1.1[\r][\n]"
+00:41:58.145 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE4LCJleHAiOjE3NzAxNDk1MTh9.WhV37TZEV40AiLRSraaM1l-XJE2no6jBqZ1v28W4UCI[\r][\n]"
+00:41:58.145 [main] DEBUG org.apache.http.wire --  >> "Cookie: JSESSIONID=645549427919DB2F037130DEDCDDA6F8[\r][\n]"
+00:41:58.145 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:58.145 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:41:58.145 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 17[\r][\n]"
+00:41:58.146 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:41:58.146 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:41:58.146 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:41:58.146 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:58.146 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> POST /api/categories HTTP/1.1
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE4LCJleHAiOjE3NzAxNDk1MTh9.WhV37TZEV40AiLRSraaM1l-XJE2no6jBqZ1v28W4UCI
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> Cookie: JSESSIONID=645549427919DB2F037130DEDCDDA6F8
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> Content-Length: 17
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:41:58.146 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:41:58.146 [main] DEBUG org.apache.http.wire --  >> "{"name":"par68f"}"
+00:41:58.164 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 [\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=C771AE97C504FC4F8BAA11BD71E7D354; Path=/; HttpOnly[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "Content-Length: 46[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:11:57 GMT[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:41:58.165 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=C771AE97C504FC4F8BAA11BD71E7D354; Path=/; HttpOnly
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << Content-Length: 46
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:11:57 GMT
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:41:58.165 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:41:58.165 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:58.165 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:41:58.165 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:58.167 [main] DEBUG org.apache.http.wire --  << "{"id":56,"name":"par68f","subCategories":null}"
+00:41:58.168 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@240f350a
+00:41:58.168 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:58.204 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:41:58.204 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:41:58.205 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:41:58.205 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:41:58.205 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:41:58.205 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:41:58.205 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/categories HTTP/1.1
+00:41:58.205 [main] DEBUG org.apache.http.wire --  >> "POST /api/categories HTTP/1.1[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE4LCJleHAiOjE3NzAxNDk1MTh9.WhV37TZEV40AiLRSraaM1l-XJE2no6jBqZ1v28W4UCI[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "Cookie: JSESSIONID=C771AE97C504FC4F8BAA11BD71E7D354[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 36[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> POST /api/categories HTTP/1.1
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE4LCJleHAiOjE3NzAxNDk1MTh9.WhV37TZEV40AiLRSraaM1l-XJE2no6jBqZ1v28W4UCI
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> Cookie: JSESSIONID=C771AE97C504FC4F8BAA11BD71E7D354
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> Content-Length: 36
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:41:58.206 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:41:58.206 [main] DEBUG org.apache.http.wire --  >> "{"name":"chi68f","parent":{"id":56}}"
+00:41:58.221 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 [\r][\n]"
+00:41:58.221 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=ED0E7EEFAB931F8D6DA6CD02AD4238A6; Path=/; HttpOnly[\r][\n]"
+00:41:58.221 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "Content-Length: 46[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:11:57 GMT[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:41:58.222 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=ED0E7EEFAB931F8D6DA6CD02AD4238A6; Path=/; HttpOnly
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << Content-Length: 46
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:11:57 GMT
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:41:58.222 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:41:58.222 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:58.223 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:41:58.223 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:58.224 [main] DEBUG org.apache.http.wire --  << "{"id":57,"name":"chi68f","subCategories":null}"
+00:41:58.224 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@f5bf288
+00:41:58.224 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:58.288 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:41:58.289 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:41:58.290 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:41:58.290 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:41:58.290 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:41:58.290 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:41:58.290 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/plants/category/57 HTTP/1.1
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "POST /api/plants/category/57 HTTP/1.1[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE4LCJleHAiOjE3NzAxNDk1MTh9.WhV37TZEV40AiLRSraaM1l-XJE2no6jBqZ1v28W4UCI[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "Cookie: JSESSIONID=ED0E7EEFAB931F8D6DA6CD02AD4238A6[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 51[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:41:58.291 [main] DEBUG org.apache.http.headers -- >> POST /api/plants/category/57 HTTP/1.1
+00:41:58.292 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTE4LCJleHAiOjE3NzAxNDk1MTh9.WhV37TZEV40AiLRSraaM1l-XJE2no6jBqZ1v28W4UCI
+00:41:58.292 [main] DEBUG org.apache.http.headers -- >> Cookie: JSESSIONID=ED0E7EEFAB931F8D6DA6CD02AD4238A6
+00:41:58.292 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:58.292 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:41:58.293 [main] DEBUG org.apache.http.headers -- >> Content-Length: 51
+00:41:58.293 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:41:58.293 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:41:58.293 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:41:58.293 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:41:58.293 [main] DEBUG org.apache.http.wire --  >> "{"name":"plt68fi91f9o","price":150.0,"quantity":25}"
+00:41:58.327 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 [\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=82373A6F32B54EE850F9C67194116434; Path=/; HttpOnly[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "Content-Length: 115[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:11:57 GMT[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:41:58.328 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=82373A6F32B54EE850F9C67194116434; Path=/; HttpOnly
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << Content-Length: 115
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:11:57 GMT
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:41:58.328 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:41:58.328 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:41:58.329 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:41:58.329 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:58.330 [main] DEBUG org.apache.http.wire --  << "{"id":12,"name":"plt68fi91f9o","price":150.0,"quantity":25,"category":{"id":57,"name":"chi68f","subCategories":[]}}"
+00:41:58.330 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7c950b3b
+00:41:58.330 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Dashboard access based on user role&quot;, &quot;Dashboard Access Control&quot;](1)" classname="runners.TestRunner" time="5.596">
+    <system-out><![CDATA[00:41:58.412 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:58664<->127.0.0.1:8080 closed
+00:41:58.413 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:58663<->127.0.0.1:8080 closed
+00:41:58.414 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:58744<->127.0.0.1:8080 closed
+00:41:58.414 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:58743<->127.0.0.1:8080 closed
+00:41:58.414 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:58742<->127.0.0.1:8080 closed
+00:41:58.414 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:58741<->127.0.0.1:8080 closed
+00:41:58.414 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:58740<->127.0.0.1:8080 closed
+00:41:58.414 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:58739<->127.0.0.1:8080 closed
+
+Scenario Outline: Verify Dashboard access based on user role &amp#27;[90m# src/test/resources/features/Dashboard.feature:10&amp#27;[0m
+00:41:58.766 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+00:41:58.986 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=144 in cache (valid until 00:51:18 04/02/2026 IST)
+00:41:58.988 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome144=144.0.7559.109 in cache (valid until 21:29:29 04/02/2026 IST)
+00:41:58.990 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 144.0.7559.109 (resolved driver for Chrome 144)
+00:41:59.033 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 144.0.7559.109 found in cache
+00:41:59.034 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\acer\.cache\selenium\chromedriver\win64\144.0.7559.109\chromedriver.exe
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser is on the login page&amp#27;[0m                            &amp#27;[90m# stepDefinitions.DashboardSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser logs in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin"&amp#27;[0m                               &amp#27;[90m# stepDefinitions.DashboardSteps.user_logs_in_as(java.lang.String)&amp#27;[0m
+Dashboard loaded successfully!
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mDashboard should be displayed&amp#27;[0m                         &amp#27;[90m# stepDefinitions.DashboardSteps.dashboard_should_be_displayed()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Feb 04, 2026 12:42:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 144
+Feb 04, 2026 12:42:00 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 144.0.7559.110. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Dashboard access based on user role&quot;, &quot;Dashboard Access Control&quot;](2)" classname="runners.TestRunner" time="3.49">
+    <system-out><![CDATA[
+Scenario Outline: Verify Dashboard access based on user role &amp#27;[90m# src/test/resources/features/Dashboard.feature:11&amp#27;[0m
+00:42:04.275 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+00:42:04.296 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=144 in cache (valid until 00:51:18 04/02/2026 IST)
+00:42:04.296 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome144=144.0.7559.109 in cache (valid until 21:29:29 04/02/2026 IST)
+00:42:04.297 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 144.0.7559.109 (resolved driver for Chrome 144)
+00:42:04.308 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 144.0.7559.109 found in cache
+00:42:04.310 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\acer\.cache\selenium\chromedriver\win64\144.0.7559.109\chromedriver.exe
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser is on the login page&amp#27;[0m                            &amp#27;[90m# stepDefinitions.DashboardSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser logs in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"user"&amp#27;[0m                                &amp#27;[90m# stepDefinitions.DashboardSteps.user_logs_in_as(java.lang.String)&amp#27;[0m
+Dashboard loaded successfully!
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mDashboard should be displayed&amp#27;[0m                         &amp#27;[90m# stepDefinitions.DashboardSteps.dashboard_should_be_displayed()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Feb 04, 2026 12:42:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 144
+Feb 04, 2026 12:42:05 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 144.0.7559.110. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify admin views sales list with correct details&quot;, &quot;Sales&quot;](3)" classname="runners.TestRunner" time="5.763">
+    <system-out><![CDATA[
+@sales
+Scenario: Verify admin views sales list with correct details                              &amp#27;[90m# src/test/resources/features/Sales.feature:4&amp#27;[0m
+00:42:07.764 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+00:42:07.774 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=144 in cache (valid until 00:51:18 04/02/2026 IST)
+00:42:07.775 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome144=144.0.7559.109 in cache (valid until 21:29:29 04/02/2026 IST)
+00:42:07.775 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 144.0.7559.109 (resolved driver for Chrome 144)
+00:42:07.781 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 144.0.7559.109 found in cache
+00:42:07.782 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\acer\.cache\selenium\chromedriver\win64\144.0.7559.109\chromedriver.exe
+00:42:09.056 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:42:09.057 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:42:09.060 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:42:09.060 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:42:09.060 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+00:42:09.060 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:42:09.060 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:42:09.060 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/auth/login HTTP/1.1
+00:42:09.060 [main] DEBUG org.apache.http.wire --  >> "POST /api/auth/login HTTP/1.1[\r][\n]"
+00:42:09.061 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:42:09.061 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:42:09.061 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 42[\r][\n]"
+00:42:09.061 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:42:09.061 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:42:09.061 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:42:09.061 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:42:09.061 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:42:09.061 [main] DEBUG org.apache.http.headers -- >> POST /api/auth/login HTTP/1.1
+00:42:09.061 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:42:09.061 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:42:09.061 [main] DEBUG org.apache.http.headers -- >> Content-Length: 42
+00:42:09.061 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:42:09.062 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:42:09.062 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:42:09.062 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:42:09.062 [main] DEBUG org.apache.http.wire --  >> "{"username":"admin","password":"admin123"}"
+00:42:09.170 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 200 [\r][\n]"
+00:42:09.171 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=056448D747CB08BB531BE18676663ECA; Path=/; HttpOnly[\r][\n]"
+00:42:09.171 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:42:09.171 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:42:09.171 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:42:09.171 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:42:09.171 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:42:09.171 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:42:09.171 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:42:09.172 [main] DEBUG org.apache.http.wire --  << "Content-Length: 194[\r][\n]"
+00:42:09.172 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:12:08 GMT[\r][\n]"
+00:42:09.172 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:42:09.172 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:42:09.172 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:42:09.172 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 200 
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=056448D747CB08BB531BE18676663ECA; Path=/; HttpOnly
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << Content-Length: 194
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:12:08 GMT
+00:42:09.172 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:42:09.173 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:42:09.173 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:42:09.173 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:42:09.173 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:42:09.175 [main] DEBUG org.apache.http.wire --  << "{"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTI5LCJleHAiOjE3NzAxNDk1Mjl9.4qGSCLjMA1y4wHMJGQ5_Q9R0oEkMTDA-Eeb4LcAFFRY","tokenType":"Bearer"}"
+00:42:09.175 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1df9f7c6
+00:42:09.175 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+00:42:09.241 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:42:09.241 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:42:09.243 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:42:09.244 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:42:09.244 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:42:09.244 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:42:09.244 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/categories HTTP/1.1
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "POST /api/categories HTTP/1.1[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTI5LCJleHAiOjE3NzAxNDk1Mjl9.4qGSCLjMA1y4wHMJGQ5_Q9R0oEkMTDA-Eeb4LcAFFRY[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "Cookie: JSESSIONID=056448D747CB08BB531BE18676663ECA[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 21[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> POST /api/categories HTTP/1.1
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTI5LCJleHAiOjE3NzAxNDk1Mjl9.4qGSCLjMA1y4wHMJGQ5_Q9R0oEkMTDA-Eeb4LcAFFRY
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> Cookie: JSESSIONID=056448D747CB08BB531BE18676663ECA
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> Content-Length: 21
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:42:09.244 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:42:09.244 [main] DEBUG org.apache.http.wire --  >> "{"name":"par68kjn9g"}"
+00:42:09.269 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 [\r][\n]"
+00:42:09.269 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=8EF1C86CCC6215592A3DABBE69AD270E; Path=/; HttpOnly[\r][\n]"
+00:42:09.269 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:42:09.269 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:42:09.269 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:42:09.269 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:42:09.269 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:42:09.270 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:42:09.270 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:42:09.270 [main] DEBUG org.apache.http.wire --  << "Content-Length: 50[\r][\n]"
+00:42:09.270 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:12:08 GMT[\r][\n]"
+00:42:09.270 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:42:09.270 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:42:09.270 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:42:09.270 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=8EF1C86CCC6215592A3DABBE69AD270E; Path=/; HttpOnly
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << Content-Length: 50
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:12:08 GMT
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:42:09.270 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:42:09.271 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:42:09.271 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:42:09.271 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:42:09.274 [main] DEBUG org.apache.http.wire --  << "{"id":58,"name":"par68kjn9g","subCategories":null}"
+00:42:09.275 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@b5ff70b
+00:42:09.275 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+00:42:09.324 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:42:09.324 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:42:09.326 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:42:09.326 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:42:09.326 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:42:09.326 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:42:09.326 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/categories HTTP/1.1
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "POST /api/categories HTTP/1.1[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTI5LCJleHAiOjE3NzAxNDk1Mjl9.4qGSCLjMA1y4wHMJGQ5_Q9R0oEkMTDA-Eeb4LcAFFRY[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "Cookie: JSESSIONID=8EF1C86CCC6215592A3DABBE69AD270E[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 40[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:42:09.326 [main] DEBUG org.apache.http.headers -- >> POST /api/categories HTTP/1.1
+00:42:09.326 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTI5LCJleHAiOjE3NzAxNDk1Mjl9.4qGSCLjMA1y4wHMJGQ5_Q9R0oEkMTDA-Eeb4LcAFFRY
+00:42:09.326 [main] DEBUG org.apache.http.headers -- >> Cookie: JSESSIONID=8EF1C86CCC6215592A3DABBE69AD270E
+00:42:09.327 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:42:09.327 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:42:09.327 [main] DEBUG org.apache.http.headers -- >> Content-Length: 40
+00:42:09.327 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:42:09.327 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:42:09.327 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:42:09.327 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:42:09.327 [main] DEBUG org.apache.http.wire --  >> "{"name":"chi68kl5be","parent":{"id":58}}"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 [\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=003D7EABBC872DB99571DBC635A91BD5; Path=/; HttpOnly[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "Content-Length: 50[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:12:08 GMT[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:42:09.360 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:42:09.361 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=003D7EABBC872DB99571DBC635A91BD5; Path=/; HttpOnly
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << Content-Length: 50
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:12:08 GMT
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:42:09.361 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:42:09.361 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:42:09.361 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:42:09.361 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:42:09.364 [main] DEBUG org.apache.http.wire --  << "{"id":59,"name":"chi68kl5be","subCategories":null}"
+00:42:09.364 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@24954e82
+00:42:09.364 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+00:42:09.409 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://localhost:8080
+00:42:09.409 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to localhost:8080
+00:42:09.411 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+00:42:09.411 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+00:42:09.411 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+00:42:09.411 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+00:42:09.411 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/plants/category/59 HTTP/1.1
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "POST /api/plants/category/59 HTTP/1.1[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTI5LCJleHAiOjE3NzAxNDk1Mjl9.4qGSCLjMA1y4wHMJGQ5_Q9R0oEkMTDA-Eeb4LcAFFRY[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "Cookie: JSESSIONID=003D7EABBC872DB99571DBC635A91BD5[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 51[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "Host: localhost:8080[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> POST /api/plants/category/59 HTTP/1.1
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzcwMTQ1OTI5LCJleHAiOjE3NzAxNDk1Mjl9.4qGSCLjMA1y4wHMJGQ5_Q9R0oEkMTDA-Eeb4LcAFFRY
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> Cookie: JSESSIONID=003D7EABBC872DB99571DBC635A91BD5
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> Accept: application/json, application/javascript, text/javascript, text/json
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> Content-Length: 51
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> Host: localhost:8080
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+00:42:09.412 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+00:42:09.412 [main] DEBUG org.apache.http.wire --  >> "{"name":"plt68kmiyjj4","price":150.0,"quantity":25}"
+00:42:09.448 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 [\r][\n]"
+00:42:09.448 [main] DEBUG org.apache.http.wire --  << "Set-Cookie: JSESSIONID=4773CFE2422D67C4445360CB86F61F7D; Path=/; HttpOnly[\r][\n]"
+00:42:09.448 [main] DEBUG org.apache.http.wire --  << "X-Content-Type-Options: nosniff[\r][\n]"
+00:42:09.448 [main] DEBUG org.apache.http.wire --  << "X-XSS-Protection: 0[\r][\n]"
+00:42:09.448 [main] DEBUG org.apache.http.wire --  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.wire --  << "Pragma: no-cache[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.wire --  << "Expires: 0[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.wire --  << "X-Frame-Options: DENY[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.wire --  << "Content-Length: 119[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.wire --  << "Date: Tue, 03 Feb 2026 19:12:08 GMT[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.wire --  << "Keep-Alive: timeout=60[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+00:42:09.449 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << Set-Cookie: JSESSIONID=4773CFE2422D67C4445360CB86F61F7D; Path=/; HttpOnly
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << X-Content-Type-Options: nosniff
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << X-XSS-Protection: 0
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << Pragma: no-cache
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << Expires: 0
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << X-Frame-Options: DENY
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << Content-Length: 119
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << Date: Tue, 03 Feb 2026 19:12:08 GMT
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << Keep-Alive: timeout=60
+00:42:09.449 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+00:42:09.449 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive for 60000 MILLISECONDS
+00:42:09.450 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+00:42:09.450 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:42:09.452 [main] DEBUG org.apache.http.wire --  << "{"id":13,"name":"plt68kmiyjj4","price":150.0,"quantity":25,"category":{"id":59,"name":"chi68kl5be","subCategories":[]}}"
+00:42:09.453 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1c459c28
+00:42:09.453 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive for 60000 MILLISECONDS
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser is on the login page&amp#27;[0m                                                         &amp#27;[90m# stepDefinitions.DashboardSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser logs in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin"&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.DashboardSteps.user_logs_in_as(java.lang.String)&amp#27;[0m
+Dashboard loaded successfully!
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mDashboard should be displayed&amp#27;[0m                                                      &amp#27;[90m# stepDefinitions.DashboardSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser navigates to Sales page&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.SalesSteps.user_navigates_to_sales_page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks Sell Plant&amp#27;[0m                                                              &amp#27;[90m# stepDefinitions.SalesSteps.user_clicks_sell_plant()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser sells the created plant with quantity &amp#27;[0m&amp#27;[32m&amp#27;[1m"3"&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.SalesSteps.user_sells_the_created_plant_with_quantity(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32msales list should show correct total price for the created plant with quantity &amp#27;[0m&amp#27;[32m&amp#27;[1m"3"&amp#27;[0m &amp#27;[90m# stepDefinitions.SalesSteps.sales_list_should_show_correct_total_price_for_created_plant_with_quantity(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Feb 04, 2026 12:42:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 144
+Feb 04, 2026 12:42:08 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 144.0.7559.110. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

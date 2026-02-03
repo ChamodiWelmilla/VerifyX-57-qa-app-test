@@ -1,9 +1,16 @@
-C:\Users\User\Documents\Projects\Group57\src\test\java\pages\authentication\LoginPage.java
-C:\Users\User\Documents\Projects\Group57\src\test\java\pages\categories\CategoryFormPage.java
-C:\Users\User\Documents\Projects\Group57\src\test\java\runners\TestRunner.java
-C:\Users\User\Documents\Projects\Group57\src\test\java\utils\ConfigReader.java
-C:\Users\User\Documents\Projects\Group57\src\test\java\stepDefinitions\Hooks.java
-C:\Users\User\Documents\Projects\Group57\src\test\java\utils\DriverManager.java
-C:\Users\User\Documents\Projects\Group57\src\test\java\pages\categories\CategoryListPage.java
-C:\Users\User\Documents\Projects\Group57\src\test\java\stepDefinitions\DashboardSteps.java
-C:\Users\User\Documents\Projects\Group57\src\test\java\pages\dashboard\DashboardPage.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\api\sales\helper\SalesPrereqApi.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\api\auth\AuthApi.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\api\support\ApiSession.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\pages\sales\SellPlantPage.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\utils\ConfigReader.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\api\support\ApiSpecs.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\stepDefinitions\DashboardSteps.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\pages\authentication\LoginPage.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\pages\sales\SalesListPage.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\pages\categories\CategoryFormPage.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\utils\DriverManager.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\pages\categories\CategoryListPage.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\runners\TestRunner.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\pages\dashboard\DashboardPage.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\stepDefinitions\Hooks.java
+C:\Users\acer\OneDrive\Desktop\sales branch\VerifyX-57-qa-app-test\src\test\java\stepDefinitions\SalesSteps.java
