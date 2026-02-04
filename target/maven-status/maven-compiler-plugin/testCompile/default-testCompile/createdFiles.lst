@@ -1,4 +1,5 @@
 stepDefinitions\Hooks.class
+pages\plants\PlantListPage.class
 runners\TestRunner.class
 utils\ConfigReader.class
 utils\DriverManager.class
