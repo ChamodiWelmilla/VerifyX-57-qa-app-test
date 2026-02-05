@@ -16,8 +16,22 @@ public class Hooks {
 
     @Before("@sales")
     public void createSalesPrerequisites() {
-        // Creates a sellable plant via APIs and stores it for the scenario thread.
         SalesPrereqApi.ensurePlantForSale(150.0, 25);
+    }
+
+    @Before("@sales-record")
+    public void ensureAtLeastOneSaleRecordExists() {
+        SalesPrereqApi.ensureSaleExistsForCurrentPlant(1);
+    }
+
+    @Before("@sales-sort")
+    public void ensureSalesForSortingExist() {
+        SalesPrereqApi.ensureSalesExistForSorting();
+    }
+
+    @Before("@sales-empty")
+    public void ensureNoSalesExist() {
+        SalesPrereqApi.deleteAllSalesAsAdmin();
     }
 
     @After("@sales")

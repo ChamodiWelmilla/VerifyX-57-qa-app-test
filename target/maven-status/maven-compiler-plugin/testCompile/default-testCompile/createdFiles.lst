@@ -1,4 +1,0 @@
-runners\TestRunner.class
-utils\ConfigReader.class
-stepDefinitions\Hooks.class
-utils\DriverManager.class
