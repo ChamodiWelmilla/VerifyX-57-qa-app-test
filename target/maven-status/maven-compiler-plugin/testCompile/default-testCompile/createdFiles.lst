@@ -1,6 +1,0 @@
-pages\plants\PlantListPage.class
-runners\TestRunner.class
-utils\ConfigReader.class
-stepDefinitions\Hooks.class
-stepDefinitions\PlantListSteps.class
-utils\DriverManager.class
