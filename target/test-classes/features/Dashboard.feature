@@ -29,10 +29,17 @@ Feature: Dashboard Access Control
       | admin |
       | user  |
 
-  Scenario Outline: Verify Navigation Menu Highlighting
+  Scenario Outline: Verify Categories Menu Highlighting
     When user logs in as "<role>"
     And user clicks on the Categories menu item
     Then the Categories menu item should be highlighted as active
+    Examples:
+      | role  |
+      | admin |
+      | user  |
+
+  Scenario Outline: Verify  Plants Menu Highlighting
+    When user logs in as "<role>"
     When user clicks on the Plants menu item
     Then the Plants menu item should be highlighted as active
 

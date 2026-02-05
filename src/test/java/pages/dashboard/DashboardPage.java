@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.ConfigReader;
 
 import java.time.Duration;
 
@@ -37,16 +38,6 @@ public class DashboardPage {
 
     @FindBy(css = "a[href*='sales']")
     WebElement salesMenu;
-
-    // Active menu indicators (IMPORTANT)
-    @FindBy(css = "a.nav-link[href='/ui/categories'].active")
-    WebElement activeCategoriesMenu;
-
-    @FindBy(css = "a.nav-link[href='/ui/plants'].active")
-    WebElement activePlantsMenu;
-
-    @FindBy(css = "a.nav-link[href='/ui/sales'].active")
-    WebElement activeSalesMenu;
 
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
@@ -93,18 +84,18 @@ public class DashboardPage {
 
 
     public boolean isCategoriesMenuActive() {
-        wait.until(ExpectedConditions.visibilityOf(activeCategoriesMenu));
-        return activeCategoriesMenu.isDisplayed();
+        wait.until(ExpectedConditions.urlContains(ConfigReader.get("ui.plants.path")));
+        return categoriesMenu.getAttribute("class").contains("active");
     }
 
     public boolean isPlantsMenuActive() {
-        wait.until(ExpectedConditions.visibilityOf(activePlantsMenu));
-        return activePlantsMenu.isDisplayed();
+        wait.until(ExpectedConditions.urlContains(ConfigReader.get("ui.plants.path")));
+        return plantsMenu.getAttribute("class").contains("active");
     }
 
     public boolean isSalesMenuActive() {
-        wait.until(ExpectedConditions.visibilityOf(activeSalesMenu));
-        return activeSalesMenu.isDisplayed();
+        wait.until(ExpectedConditions.urlContains(ConfigReader.get("ui.sales.path")));
+        return salesMenu.getAttribute("class").contains("active");
     }
 
 
