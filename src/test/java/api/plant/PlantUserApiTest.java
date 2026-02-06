@@ -10,8 +10,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utils.ConfigReader;
 
-import static org.hamcrest.Matchers.*;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -112,7 +110,7 @@ public void setup() {
                 .spec(ApiSpecs.authedJsonSpec(userSession))
                 .body(validUpdateData) 
             .when()
-                .put("/api/plants/"+dynamicPlantId)
+                .put("/api/plants/" +dynamicPlantId)
             .then()
                 .extract().statusCode(), 403, "Users must be Forbidden (403) from updating plants");
     }
@@ -124,7 +122,7 @@ public void setup() {
             RestAssured.given()
                 .spec(ApiSpecs.authedJsonSpec(userSession))
             .when()
-                .delete("/api/plants/"+dynamicPlantId)
+                .delete("/api/plants/" +dynamicPlantId)
             .then()
                 .extract().statusCode(), 403, "Users must be Forbidden (403) from deleting plants");
     }

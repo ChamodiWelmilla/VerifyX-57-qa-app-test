@@ -12,7 +12,6 @@ import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import utils.SalesContext;
 
 import java.util.List;
 
