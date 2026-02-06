@@ -35,4 +35,9 @@ public class ApiSpecs {
 
         return spec;
     }
+
+    public static RequestSpecification getRequestSpec(String adminToken) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getRequestSpec'");
+    }
 }

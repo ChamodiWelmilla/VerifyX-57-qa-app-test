@@ -152,8 +152,6 @@ public class PlantStepDefinitions {
         Assert.assertFalse(actionsVisible, "Edit/Delete buttons are visible to a standard User!"); 
     }
 
-    
-
     @When("user navigates to the Plant List page")
     public void user_navigates_to_plant_list() {
         DriverManager.getDriver().get(
@@ -167,11 +165,6 @@ public class PlantStepDefinitions {
         // FIXED: Using instance variable 'plantPage' instead of class name
         Assert.assertTrue(plantPage.isLowBadgeDisplayedForLowQuantityPlant());
     }
-
-
-
-
-
 
     // TC_PLANTUI_USR_04
     @When("the user searches for plant name {string}")

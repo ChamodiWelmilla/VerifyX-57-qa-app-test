@@ -3,7 +3,7 @@ Feature: Plant Management
     Given user is on the login page
     
   #adminui1
-  @UI @Admin @AdminUI_Test_01
+  @UI @AdminUI @AdminUI_Test_01
   Scenario: Creation of a new plant successfully with valid data
     Given Admin is logged in and navigated to the Plant List page
     When the Admin clicks the "Add Plant" button
@@ -13,7 +13,7 @@ Feature: Plant Management
 
 
 # Based on PLANTUI_AD_02
-  @UI @Admin @AdminUI_Test_02
+  @UI @AdminUI @AdminUI_Test_02
   Scenario: Cancel button functionality in the add plant form
     Given Admin is logged in and navigated to the Plant List page
     When the Admin clicks the "Add Plant" button
@@ -23,7 +23,7 @@ Feature: Plant Management
 
 
     # Based on PLANTUI_AD_03
-  @UI @Admin @NegativeTest @AdminUI_Test_03
+  @UI @AdminUI @NegativeTest @AdminUI_Test_03
   Scenario: Validation error when the price is negative
     Given Admin is logged in and navigated to the Plant List page
     When the Admin clicks the "Add Plant" button
@@ -32,7 +32,7 @@ Feature: Plant Management
     Then the system displays the validation error "Price must be greater than 0" 
 
   # Based on TC_PLANTUI_AD_04
-  @UI @Admin @NegativeTest @AdminUI_Test_04
+  @UI @AdminUI @NegativeTest @AdminUI_Test_04
   Scenario: Validation error for short Plant Name
     Given Admin is logged in and navigated to the Plant List page
     When the Admin clicks the "Add Plant" button
@@ -41,7 +41,7 @@ Feature: Plant Management
     Then the system displays the validation error "Plant name must be between 3 and 25 characters"
 
   # Based on TC_PLANTUI_AD_05
-  @UI @Admin @AdminUI_Test_05
+  @UI @AdminUI @AdminUI_Test_05
   Scenario: Edit functionality for an existing plant
     Given Admin is logged in and navigated to the Plant List page
     When the Admin clicks the Edit button for an existing plant
@@ -55,7 +55,7 @@ Feature: Plant Management
 
 # --- USER SCENARIOS (TC_PLANTUI_USR_01 to 05) ---
  # Based on TC_PLANTUI_USR_01 
-  @UI @User @UserUI_Test_01
+  @UI @UserUI @UserUI_Test_01
   Scenario: Add Plant button is hidden for normal User
     Given user is on the login page
     When user logs in as "user"
@@ -63,27 +63,27 @@ Feature: Plant Management
     Then the Add Plant button should not be visible
 
 
-  @UI @User @UserUI_Test_02
+  @UI @UserUI @UserUI_Test_02
   Scenario: Edit and Delete actions are hidden for normal User
     When user logs in as "user"
     And Admin is navigated to the Plant List page
     Then the Edit and Delete actions should be hidden for the user 
 
 # Based on TC_PLANTUI_USR_03
-  @UI @User @UserUI_Test_03
+  @UI @UserUI @UserUI_Test_03
     Scenario: Verify Plant List Low Badge
       When user logs in as "user"
       And User navigates to the Plant List page 
       Then Low badge should be displayed for plants with quantity less than five
 
-  @UI @User @UserUI_Test_04
+  @UI @UserUI @UserUI_Test_04
   Scenario: Search by Plant Name
     When user logs in as "user"
     And User is navigated to the Plant List page
     When the user searches for plant name "Aloe"
     Then the list should only display plants matching "Aloe"
 
-  @UI @User @UserUI_Test_05
+  @UI @UserUI @UserUI_Test_05
   Scenario: No plants found empty state
     When user logs in as "user"
     And Admin is navigated to the Plant List page
