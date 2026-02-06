@@ -12,6 +12,7 @@ D:\ITQA\Automation\VerifyX-57-qa-app-test\src\test\java\api\sales\helper\SalesPr
 D:\ITQA\Automation\VerifyX-57-qa-app-test\src\test\java\stepDefinitions\DashboardSteps.java
 D:\ITQA\Automation\VerifyX-57-qa-app-test\src\test\java\runners\TestRunner.java
 D:\ITQA\Automation\VerifyX-57-qa-app-test\src\test\java\stepDefinitions\Category2Steps.java
+D:\ITQA\Automation\VerifyX-57-qa-app-test\src\test\java\pages\categories\Category2Page.java
 D:\ITQA\Automation\VerifyX-57-qa-app-test\src\test\java\utils\SalesContext.java
 D:\ITQA\Automation\VerifyX-57-qa-app-test\src\test\java\api\support\ApiSession.java
 D:\ITQA\Automation\VerifyX-57-qa-app-test\src\test\java\pages\sales\SalesListPage.java
