@@ -14,9 +14,15 @@ public class DashboardSteps {
 
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
-        DriverManager.getDriver().get(
-                ConfigReader.get("ui.base.url") + ConfigReader.get("ui.login.path")
-        );
+        // Compose login URL robustly: if ui.base.url already contains the login path,
+        // use it as-is
+        String base = ConfigReader.get("ui.base.url");
+        String loginPath = ConfigReader.get("ui.login.path");
+        String loginUrl = base;
+        if (!base.contains("login") && loginPath != null && !loginPath.isEmpty()) {
+            loginUrl = base.endsWith("/") ? base.substring(0, base.length() - 1) + loginPath : base + loginPath;
+        }
+        DriverManager.getDriver().get(loginUrl);
 
         loginPage = new LoginPage(DriverManager.getDriver());
         dashboardPage = new DashboardPage(DriverManager.getDriver());
@@ -42,8 +48,7 @@ public class DashboardSteps {
     public void dashboard_should_be_displayed() {
         Assert.assertTrue(
                 dashboardPage.isDashboardDisplayed(),
-                "Dashboard is not displayed!"
-        );
+                "Dashboard is not displayed!");
         System.out.println("Dashboard loaded successfully!");
     }
 }
