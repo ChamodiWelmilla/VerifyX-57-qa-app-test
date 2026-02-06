@@ -13,8 +13,6 @@ import utils.ConfigReader;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.hamcrest.Matchers.*;
-
 public class PlantAdminApiTest {
 
     private ApiSession adminSession;

@@ -3,12 +3,12 @@ package stepDefinitions;
 import io.cucumber.java.en.*;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import pages.plants.PlantListPage;
+import pages.plant.PlantListPage;
 import utils.DriverManager;
 import utils.ConfigReader;
 
 import api.auth.AuthApi;
-import api.plants.PlantsApi;
+import api.plant.PlantsListApi;
 import api.support.ApiSession;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,6 +25,7 @@ public class PlantListSteps {
     private ApiSession userSession;
     private Response response;
 
+    // UI
     @When("admin navigates to the Plant List page")
     public void admin_navigates_to_plant_list() {
         DriverManager.getDriver().get(
@@ -33,8 +34,8 @@ public class PlantListSteps {
         plantListPage = new PlantListPage(DriverManager.getDriver());
     }
 
-    @Then("Low badge should be displayed for plants with quantity less than five")
-    public void verify_low_badge() {
+    @Then("Low quantity badge should be displayed for Plant List")
+    public void verify_low_quantity_badge_for_plant_list() {
         Assert.assertTrue(
                 plantListPage.isLowBadgeDisplayedForLowQuantityPlant(),
                 "Low badge is NOT displayed for plants with quantity < 5"
@@ -72,9 +73,9 @@ public class PlantListSteps {
         Assert.assertEquals(actual, expected, "Descending sort failed!");
     }
 
-    //api
-    @Given("plant {string} is authenticated via API")
-    public void plant_user_is_authenticated_via_API(String userType) {
+    // API
+    @Given("{string} is authenticated via API")
+    public void user_is_authenticated_via_API(String userType) {
         ApiSession session;
         if (userType.equalsIgnoreCase("admin")) {
             session = AuthApi.loginAsAdmin();
@@ -89,7 +90,7 @@ public class PlantListSteps {
     @When("{string} requests the full plant list")
     public void admin_requests_the_full_plant_list(String userType) {
         ApiSession session = userType.equalsIgnoreCase("admin") ? adminSession : userSession;
-        response = PlantsApi.getAllPlants(session);
+        response = PlantsListApi.getAllPlants(session);
     }
 
     @Then("the plant response status should be 200")
@@ -108,7 +109,7 @@ public class PlantListSteps {
     @When("{string} requests plants for category {int}")
     public void user_requests_plants_for_category(String userType, int categoryId) {
         ApiSession session = userType.equalsIgnoreCase("admin") ? adminSession : userSession;
-        response = PlantsApi.getPlantsByCategory(session, String.valueOf(categoryId));
+        response = PlantsListApi.getPlantsByCategory(session, String.valueOf(categoryId));
     }
 
     @Then("all plants returned should belong to category {int}")
@@ -141,7 +142,7 @@ public class PlantListSteps {
     @When("{string} requests paged plants sorted by {string} ascending")
     public void user_requests_paged_plants_sorted_by_field_ascending(String userType,String field) {
         ApiSession session = userType.equalsIgnoreCase("admin") ? adminSession : userSession;
-        response = PlantsApi.getPagedPlants(session, 0, 3, field + ",asc");
+        response = PlantsListApi.getPagedPlants(session, 0, 3, field + ",asc");
     }
 
     @Then("plants should be sorted by {string} ascending")

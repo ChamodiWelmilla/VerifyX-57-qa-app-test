@@ -29,6 +29,8 @@ public class DashboardSteps {
     private ApiSession userSession;
     private Map<String, Integer> dashboardSummary;
 
+    // UI
+
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
         DriverManager.getDriver().get(
@@ -125,10 +127,10 @@ public class DashboardSteps {
         );
     }
 
-    //api
+    // API
 
     @Given("{string} is authenticated")
-    public void user_is_authenticated_via_api(String userType) {
+    public void user_is_authenticated(String userType) {
         ApiSession session;
         if (userType.equalsIgnoreCase("admin")) {
             session = AuthApi.loginAsAdmin();
