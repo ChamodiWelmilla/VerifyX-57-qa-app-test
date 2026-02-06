@@ -1,0 +1,18 @@
+# Maven build output
+/target/
+
+# Allure reports
+/allure-results/
+/allure-report/
+
+# Test reports
+/test-output/
+/reports/
+
+# Logs
+*.log
+/logs/
+
+# OS files
+.DS_Store
+Thumbs.db
