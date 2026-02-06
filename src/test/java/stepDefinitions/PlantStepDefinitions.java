@@ -3,6 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.*;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,11 +33,17 @@ public class PlantStepDefinitions {
     }
 
     @When("the Admin clicks the {string} button")
-    public void the_admin_clicks_the_button(String buttonName) {
-        if (buttonName.equalsIgnoreCase("Add Plant")) {
-            plantPage.clickAddPlant();
-        }
+public void the_admin_clicks_the_button(String buttonName) {
+    // Small wait to allow any success alerts to appear/settle
+    new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(2))
+        .until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+        
+    if (buttonName.equalsIgnoreCase("Add Plant")) {
+        plantPage.clickAddPlant();
     }
+}
+
+
 
     @Then("the system redirects to the Plants page")
     public void the_system_redirects_to_the_plants_page() {
@@ -56,9 +63,20 @@ public class PlantStepDefinitions {
     }
 
     @Then("the new plant {string} appears in the list")
-    public void the_new_plant_appears_in_the_list(String plantName) {
-        Assert.assertTrue(DriverManager.getDriver().getPageSource().contains(plantName));
-    }
+public void the_new_plant_appears_in_the_list(String plantName) {
+   
+    WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10));
+    
+   
+    wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("table")));
+    
+  
+    plantPage.searchPlant(plantName);
+    
+    
+    boolean isPresent = DriverManager.getDriver().getPageSource().contains(plantName);
+    Assert.assertTrue(isPresent, "The plant '" + plantName + "' was not found in the list after creation!");
+}
 
     @When("the Admin clicks the Cancel button")
     public void clicks_cancel() {
@@ -81,7 +99,7 @@ public class PlantStepDefinitions {
     }
 
 
-    // PLANTUI_AD_03 & PLANTUI_AD_04: Validates specific field errors 
+   
     @When("enters {string} as name and {string} as price")
     public void enters_as_name_and_as_price(String name, String price) {
         plantPage.fillPlantForm(name, "subcat1", price, "10"); 
@@ -102,10 +120,10 @@ public class PlantStepDefinitions {
 
     @And("Admin is navigated to the Plant List page")
     public void admin_is_navigated_to_the_plant_list_page() {
-        // Build the URL using your ConfigReader pattern
+       
         DriverManager.getDriver().get(ConfigReader.get("ui.base.url") + "/ui/plants");
         
-        // Initialize the page object if it hasn't been already
+     
         if (plantPage == null) {
             plantPage = new PlantPage(DriverManager.getDriver());
         }
@@ -114,7 +132,7 @@ public class PlantStepDefinitions {
 
     //user ui test
 
-    // NEWLY ADDED: This matches "And User navigates to the Plant List page"
+    
     @And("User navigates to the Plant List page")
     public void user_navigates_to_plant_list_page() {
         DriverManager.getDriver().get(
@@ -123,16 +141,15 @@ public class PlantStepDefinitions {
         plantPage = new PlantPage(DriverManager.getDriver());
     }
 
-    // NEWLY ADDED: This matches "And User is navigated to the Plant List page"
+   
     @And("User is navigated to the Plant List page")
     public void user_is_navigated_to_plant_list() {
         user_navigates_to_plant_list_page();
     }
 
-    // NEWLY ADDED: Corrected login step to match "When User logs in as {string}"
     @When("User logs in as {string}")
     public void user_logs_in_as_role(String role) {
-        // You can reuse the existing logic from DashboardSteps if needed
+        
         loginPage = new LoginPage(DriverManager.getDriver());
         if (role.equalsIgnoreCase("admin")) {
             loginPage.enterUsername(ConfigReader.get("admin.username"));
@@ -145,12 +162,14 @@ public class PlantStepDefinitions {
     }
 
 
-    // TC_PLANTUI_USR_02
+    
     @Then("the Edit and Delete actions should be hidden for the user")
     public void verify_actions_hidden() {
         boolean actionsVisible = plantPage.areEditDeleteButtonsVisible();
         Assert.assertFalse(actionsVisible, "Edit/Delete buttons are visible to a standard User!"); 
     }
+
+    
 
     @When("user navigates to the Plant List page")
     public void user_navigates_to_plant_list() {
@@ -161,10 +180,23 @@ public class PlantStepDefinitions {
     }
 
     @Then("Low badge should be displayed for plants with quantity less than five")
-    public void verify_low_badge() {
-        // FIXED: Using instance variable 'plantPage' instead of class name
-        Assert.assertTrue(plantPage.isLowBadgeDisplayedForLowQuantityPlant());
+public void verify_low_badge() {
+   
+    WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10));
+    
+    try {
+       
+        boolean isBadgePresent = plantPage.isLowBadgeDisplayedForLowQuantityPlant();
+        Assert.assertTrue(isBadgePresent, "FAILURE: 'Low' stock badge was not found on the page for low quantity plants.");
+    } catch (Exception e) {
+        Assert.fail("The 'Low' badge did not appear within the timeout period. Error: " + e.getMessage());
     }
+}
+
+
+
+
+
 
     // TC_PLANTUI_USR_04
     @When("the user searches for plant name {string}")
@@ -182,7 +214,7 @@ public class PlantStepDefinitions {
 public void verify_empty_state(String expectedMessage) {
     WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(5));
     
-    // Wait until the element is actually present in the DOM
+  
     WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(
         By.xpath("//td[contains(text(), '" + expectedMessage + "')]")
     ));
