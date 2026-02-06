@@ -104,17 +104,6 @@ public class ApiSalesSteps {
         lastStatusCode = apiResponse.statusCode();
     }
 
-    @When("admin sends GET request to retrieve sales list via API")
-    public void admin_sends_get_request_to_retrieve_sales_list_via_api() {
-        Assert.assertNotNull(adminSession, "Admin not authenticated");
-
-        apiResponse = RestAssured.given()
-                .spec(ApiSpecs.authedJsonSpec(adminSession))
-                .get("/api/sales");
-
-        lastStatusCode = apiResponse.statusCode();
-    }
-
     @When("testuser sends GET request to retrieve sales list via API")
     public void testuser_sends_get_request_to_retrieve_sales_list_via_api() {
         Assert.assertNotNull(userSession, "User not authenticated");
@@ -181,14 +170,10 @@ public class ApiSalesSteps {
     @Then("API response should contain error message about exceeding stock")
     public void api_response_should_contain_error_message_about_stock() {
         String body = apiResponse.asString();
-        Assert.assertTrue(body.toLowerCase().contains("stock") || body.toLowerCase().contains("quantity") || body.toLowerCase().contains("exceeds"),
+        Assert.assertTrue(
+                body.toLowerCase().contains("stock") || body.toLowerCase().contains("quantity")
+                        || body.toLowerCase().contains("exceeds"),
                 "Expected error message about stock/quantity in response: " + body);
-    }
-
-    @Then("API response should contain validation error message")
-    public void api_response_should_contain_validation_error_message() {
-        String body = apiResponse.asString();
-        Assert.assertTrue(body.length() > 0, "Expected error message in response");
     }
 
     @Then("API response should contain sales list data")

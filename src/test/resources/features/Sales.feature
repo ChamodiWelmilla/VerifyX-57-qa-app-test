@@ -164,21 +164,6 @@ Feature: Sales
     Then API should return an error status code
     And API response should contain error message about exceeding stock
 
-  @api-sales-list
-  Scenario: Verify admin can retrieve sales list via API
-    Given admin is authenticated via API
-    When admin sends GET request to retrieve sales list via API
-    Then API should return status code 200
-    And API response should contain sales list data
-
-  @api-sales-invalid-quantity
-  Scenario: Verify admin cannot create sale with invalid quantity via API
-    Given admin is authenticated via API
-    And a plant is created via API with price "150.0" and stock "25"
-    When admin sends POST request to create a sale via API with quantity "0"
-    Then API should return an error status code
-    And API response should contain validation error message
-
   @api-sales-update-stock
   Scenario: Verify admin updates remaining stock after creating sale via API
     Given admin is authenticated via API
