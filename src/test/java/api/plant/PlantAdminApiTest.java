@@ -29,6 +29,8 @@ public class PlantAdminApiTest {
         );
     }
 
+    //TC_PLANTAPI_AD_01
+
     @Test(priority = 1)
     public void TC_PLANTAPI_AD_01_createPlantSuccessfully() {
         String plantName = "new plant" + System.currentTimeMillis();
@@ -53,6 +55,8 @@ public class PlantAdminApiTest {
         Assert.assertEquals(response.jsonPath().getString("name"), plantName);
     }
 
+
+    //TC_PLANTAPI_AD_02
     @Test(priority = 2, dependsOnMethods = "TC_PLANTAPI_AD_01_createPlantSuccessfully")
     public void TC_PLANTAPI_AD_02_updatePlantDetails() {
         Map<String, Object> updateData = new HashMap<>();
@@ -71,6 +75,27 @@ public class PlantAdminApiTest {
         Assert.assertEquals(response.jsonPath().getInt("quantity"), 50);
     }
 
+    //TC_PLANTAPI_AD_03
+    @Test(priority = 5, dependsOnMethods = "TC_PLANTAPI_AD_01_createPlantSuccessfully")
+    public void TC_PLANTAPI_AD_03_deletePlantSuccessfully() {
+        Response deleteResp = RestAssured.given()
+                .spec(ApiSpecs.authedJsonSpec(adminSession))
+        .when()
+                .delete("/api/plants/" + createdPlantId);
+
+        int status = deleteResp.statusCode();
+        Assert.assertTrue(status == 200 || status == 204, "Expected 200 or 204. Got: " + status);
+
+        // Verify the plant is deleted
+        Response checkResp = RestAssured.given()
+                .spec(ApiSpecs.authedJsonSpec(adminSession))
+        .when()
+                .get("/api/plants/" + createdPlantId);
+
+        Assert.assertEquals(checkResp.statusCode(), 404, "Plant should return 404 after deletion");
+    }
+
+    //TC_PLANTAPI_AD_04
     @Test(priority = 3)
     public void TC_PLANTAPI_AD_04_verifyNegativePriceValidation() {
         Map<String, Object> invalidData = new HashMap<>();
@@ -90,6 +115,7 @@ public class PlantAdminApiTest {
                 "Error message should indicate price validation failure");
     }
 
+    //TC_PLANTAPI_AD_05
     @Test(priority = 4)
     public void TC_PLANTAPI_AD_05_verifyShortNameValidation() {
         Map<String, Object> invalidData = new HashMap<>();
@@ -109,22 +135,5 @@ public class PlantAdminApiTest {
                 "Error message should indicate name length validation failure");
     }
 
-    @Test(priority = 5, dependsOnMethods = "TC_PLANTAPI_AD_01_createPlantSuccessfully")
-    public void TC_PLANTAPI_AD_03_deletePlantSuccessfully() {
-        Response deleteResp = RestAssured.given()
-                .spec(ApiSpecs.authedJsonSpec(adminSession))
-        .when()
-                .delete("/api/plants/" + createdPlantId);
-
-        int status = deleteResp.statusCode();
-        Assert.assertTrue(status == 200 || status == 204, "Expected 200 or 204. Got: " + status);
-
-        // Verify the plant is deleted
-        Response checkResp = RestAssured.given()
-                .spec(ApiSpecs.authedJsonSpec(adminSession))
-        .when()
-                .get("/api/plants/" + createdPlantId);
-
-        Assert.assertEquals(checkResp.statusCode(), 404, "Plant should return 404 after deletion");
-    }
+    
 }
