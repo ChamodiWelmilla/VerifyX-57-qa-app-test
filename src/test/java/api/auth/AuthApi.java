@@ -55,6 +55,13 @@ public class AuthApi {
     }
 
 
+    public static ApiSession loginAsUser() {
+        return login(
+                Optional.ofNullable(ConfigReader.get("user.username")).orElse("user"),
+                Optional.ofNullable(ConfigReader.get("user.password")).orElse("user123")
+        );
+    }
+
     private static String tryExtractToken(Response response) {
         String contentType = response.getContentType() == null ? "" : response.getContentType();
         if (!contentType.toLowerCase().contains("json")) {
