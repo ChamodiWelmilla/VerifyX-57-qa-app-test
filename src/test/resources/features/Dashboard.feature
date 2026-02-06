@@ -58,11 +58,17 @@ Feature: Dashboard Access Control
       | admin |
       | user  |
 
-  @api
-  Scenario: TC_ADMIN_API_DASHBOARD_001 Verify Dashboard Summary
-    Given admin is authenticated via API
-    When admin requests the dashboard summary
+
+  @api @dashboard1
+  Scenario Outline: TC_DASHBOARD_001 Verify Dashboard Summary for different users
+    Given "<user>" is authenticated
+    When "<user>" requests the dashboard summary
     Then the response status should be 200
     And dashboard summary should contain integer counts for:
       | categories |
       | plants     |
+
+    Examples:
+      | user      |
+      | admin     |
+      | nonadmin  |

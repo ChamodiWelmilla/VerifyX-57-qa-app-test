@@ -22,6 +22,7 @@ public class PlantListSteps {
 
     PlantListPage plantListPage;
     private ApiSession adminSession;
+    private ApiSession userSession;
     private Response response;
 
     @When("admin navigates to the Plant List page")
@@ -72,15 +73,23 @@ public class PlantListSteps {
     }
 
     //api
-    @Given("plant admin is authenticated via API")
-    public void admin_is_authenticated_via_api() {
-        adminSession = AuthApi.loginAsAdmin();
-        assertNotNull(adminSession.getBearerToken(), "Admin token should not be null");
+    @Given("plant {string} is authenticated via API")
+    public void plant_user_is_authenticated_via_API(String userType) {
+        ApiSession session;
+        if (userType.equalsIgnoreCase("admin")) {
+            session = AuthApi.loginAsAdmin();
+            adminSession = session;
+        } else {
+            session = AuthApi.loginAsUser();
+            userSession = session;
+        }
+        assertNotNull(session.getBearerToken(), userType + " token should not be null");
     }
 
-    @When("admin requests the full plant list")
-    public void admin_requests_the_full_plant_list() {
-        response = PlantsApi.getAllPlants(adminSession);
+    @When("{string} requests the full plant list")
+    public void admin_requests_the_full_plant_list(String userType) {
+        ApiSession session = userType.equalsIgnoreCase("admin") ? adminSession : userSession;
+        response = PlantsApi.getAllPlants(session);
     }
 
     @Then("the plant response status should be 200")
@@ -96,14 +105,10 @@ public class PlantListSteps {
                 "Plant list should not be empty");
     }
     //category
-    @When("admin requests plants for category {int}")
-    public void admin_requests_plants_for_category(int categoryId) {
-        response = PlantsApi.getPlantsByCategory(adminSession, String.valueOf(categoryId));
-    }
-
-    @Then("the category plant response status should be 200")
-    public void category_plant_response_status_should_be_200() {
-        assertEquals(response.statusCode(), 200, "Unexpected status code for category plants");
+    @When("{string} requests plants for category {int}")
+    public void user_requests_plants_for_category(String userType, int categoryId) {
+        ApiSession session = userType.equalsIgnoreCase("admin") ? adminSession : userSession;
+        response = PlantsApi.getPlantsByCategory(session, String.valueOf(categoryId));
     }
 
     @Then("all plants returned should belong to category {int}")
@@ -131,12 +136,12 @@ public class PlantListSteps {
         }
     }
 
-    // price sorting
+    // sorting
 
-    @When("admin requests paged plants sorted by {string} ascending")
-    public void admin_requests_paged_plants_sorted_by_field_ascending(String field) {
-        // Request first page with 3 records sorted by given field
-        response = PlantsApi.getPagedPlants(adminSession, 0, 3, field + ",asc");
+    @When("{string} requests paged plants sorted by {string} ascending")
+    public void user_requests_paged_plants_sorted_by_field_ascending(String userType,String field) {
+        ApiSession session = userType.equalsIgnoreCase("admin") ? adminSession : userSession;
+        response = PlantsApi.getPagedPlants(session, 0, 3, field + ",asc");
     }
 
     @Then("plants should be sorted by {string} ascending")

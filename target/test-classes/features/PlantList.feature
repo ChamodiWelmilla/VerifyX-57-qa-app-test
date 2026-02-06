@@ -18,33 +18,51 @@ Feature: PlantList feature
     When user clicks on the Quantity column header
     Then the plant list should be sorted by quantity in descending order
 
-  @api @plant
-  Scenario: Verify Admin Full Plant List Retrieval
-    Given plant admin is authenticated via API
-    When admin requests the full plant list
+  @api @plant1
+  Scenario Outline: Verify User Full Plant List Retrieval
+    Given plant "<user>" is authenticated via API
+    When "<user>" requests the full plant list
     Then the plant response status should be 200
     And the response should contain a list of plants
+    Examples:
+      | user      |
+      | admin     |
+      | non admin |
 
   @api @plant2
-  Scenario: TC_ADMIN_API_PLANT_002 Verify Category-Specific Plant Count
-    Given plant admin is authenticated via API
-    When admin requests plants for category 1
-    Then the category plant response status should be 200
+  Scenario Outline: TC_ADMIN_API_PLANT_002 Verify Category-Specific Plant Count
+    Given plant "<user>" is authenticated via API
+    When "<user>" requests plants for category 1
+    Then the plant response status should be 200
     And all plants returned should belong to category 1
-
+    Examples:
+      | user      |
+      | admin     |
+      | non admin |
 
   @api @plant3
-  Scenario: TC_ADMIN_API_PLANT_001 Verify Plant Price Sorting
-    Given plant admin is authenticated via API
-    When admin requests paged plants sorted by "price" ascending
+  Scenario Outline: Verify Plant Price Sorting for different users
+    Given plant "<user>" is authenticated via API
+    When "<user>" requests paged plants sorted by "price" ascending
     Then the plant response status should be 200
     And plants should be sorted by "price" ascending
     And at least 3 plants are returned
 
+    Examples:
+      | user      |
+      | admin     |
+      | non admin  |
+
+
   @api @plant4
-  Scenario: TC_ADMIN_API_PLANT_003 Verify Plant List Sorting by Quantity
-    Given plant admin is authenticated via API
-    When admin requests paged plants sorted by "quantity" ascending
+ Scenario Outline: TC_ADMIN_API_PLANT_003 Verify Plant List Sorting by Quantity
+    Given plant "<user>" is authenticated via API
+    When "<user>" requests paged plants sorted by "quantity" ascending
     Then the plant response status should be 200
     And plants should be sorted by "quantity" ascending
     And at least 3 plants are returned
+
+    Examples:
+      | user      |
+      | admin     |
+      | non admin  |

@@ -1,3 +1,2 @@
 api\plants\PlantsApi.class
-stepDefinitions\DashboardStepsApi.class
 api\dashboard\DashboardApi.class
